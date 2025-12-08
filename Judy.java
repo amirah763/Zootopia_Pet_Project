@@ -29,7 +29,34 @@ public class Judy {
         return this.happiness;
     }
 
+    // Method to solve a case
+    public void solveCase(int num) {
+        System.out.println("Solving case #" + num);
+        this.health -= 5;
+        this.energy -= 15;
+        this.happiness += 5;
+    }
 
+    // Method to sleep
+    public void sleep() {
+        System.out.println("Judy is sleeping...");
+        this.energy += 30;
+        this.health += 10;
+    }
 
-    
-}
+    // Method to eat
+    public void eat() {
+        System.out.println("Judy is eating...");
+        this.energy += 15;
+        this.health += 5;
+        this.happiness -= 1;
+    }
+
+    // Method to do nothing
+    public void doNothing() {
+        System.out.println("Judy is doing nothing...");
+        this.energy -= 2;
+        this.health -= 1;
+        this.happiness -= 2;
+    }
+}   
