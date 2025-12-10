@@ -59,4 +59,12 @@ public class Judy {
         this.health -= 1;
         this.happiness -= 2;
     }
+
+    // Method to check stats
+    public void checkStats() {
+        System.out.println("=== Judy's Current Status ===");
+        System.out.println("Health: " + this.health);
+        System.out.println("Energy: " + this.energy);
+        System.out.println("Happiness: " + this.happiness);
+    }
 }   
